@@ -9,7 +9,7 @@
 apt-get update
 apt-get -y install gcc build-essential bind9 dnsutils cmake make gcc g++ flex bison
 apt-get -y install libpcap-dev libgeoip-dev libssl-dev python-dev zlib1g-dev libmagic-dev 
-apt-get -y install hping3 vim ntp xinetd curl default-jre git rubygems swig2.0 
+apt-get -y install hping3 vim ntp xinetd curl default-jre git ruby swig2.0 
 mkdir build
 cd build
 
