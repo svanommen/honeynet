@@ -22,7 +22,7 @@ hostname $NEWHOSTNAME
 
 cat /etc/hosts | sed  s/$OLDHOSTNAME/$NEWHOSTNAME/g > /tmp/hosts
 mv -f /tmp/hosts /etc/hosts
-echo -e "127.0.0.1\t$NEWHOSTNAME" >> /etc/hosts
+echo "127.0.0.1\t$NEWHOSTNAME" >> /etc/hosts
 
 ###### Install NTP ######
 mkdir build && cd build
