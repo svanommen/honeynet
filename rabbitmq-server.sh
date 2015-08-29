@@ -51,7 +51,7 @@ update-rc.d rabbitmq-server defaults
 rabbitmqctl add_vhost /amp
 rabbitmqctl add_user USERNAME PASSWORD
 
-rabbitmqctl set_permissions -p /amp PASSWORD ".*" ".*" ".*"
+rabbitmqctl set_permissions -p /amp USERNAME ".*" ".*" ".*"
 
 rabbitmqctl add_user USERNAME-CTL PASSWORD-CTL
 rabbitmqctl set_user_tags admin administrator
