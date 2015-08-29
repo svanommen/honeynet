@@ -54,8 +54,8 @@ rabbitmqctl add_user USERNAME PASSWORD
 rabbitmqctl set_permissions -p /amp USERNAME ".*" ".*" ".*"
 
 rabbitmqctl add_user USERNAME-CTL PASSWORD-CTL
-rabbitmqctl set_user_tags admin administrator
-rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+rabbitmqctl set_user_tags USERNAME-CTL administrator
+rabbitmqctl set_permissions -p / USERNAME-CTL ".*" ".*" ".*"
 rabbitmqctl delete_user guest
 service rabbitmq-server restart
 
